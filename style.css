@@ -65,6 +65,7 @@ div#menu span {
     background-color: var(--color-dark);
     margin: .3em 0em;
     border-radius: 50px;
+    transition: .3s;
 }
 
 div#menu span:nth-child(1),
@@ -85,17 +86,17 @@ div#menu span:nth-child(3) {
 
     div.ativo span:nth-child(1) {
         transform: translateY(8px) rotate(-45deg);
-        transition: .3s;
     }
 
     div.ativo span:nth-child(2) {
         opacity: 0;
+        transition: 0s
     }
 
     div.ativo span:nth-child(3) {
         transform: translateY(-8px) rotate(45deg);
-        transition: .3s;
     }
+    
     ul#nav-menu {
         position: fixed;
         flex-direction: column;

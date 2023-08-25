@@ -134,7 +134,7 @@ div#image {
     }
 
     div#image img{
-        width: 500px;
+        width: 100vw;
     }
 
     div#text h1 {

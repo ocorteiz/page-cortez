@@ -1,1 +1,1 @@
-PARA ACESSAR OAGINA WEB: https://ocorteiz.github.io/page-cortez/
+PARA ACESSAR PAGINA WEB: https://ocorteiz.github.io/page-cortez/

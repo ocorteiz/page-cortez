@@ -27,9 +27,12 @@ nav#navigate {
 }
 
 nav#navigate a#logo {
-    color: var(--color-red);
     font-weight: bold;
     font-size: 1.5em;
+}
+
+a#logo span {
+    color: var(--color-red);
 }
 
 ul#nav-menu {
@@ -47,6 +50,17 @@ ul#nav-menu a, i {
 ul#nav-menu li a:hover, i:hover {
     color: var(--color-red);
     transition: .5s;
+}
+
+a#contact {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 30px;
+}
+
+a#contact:hover {
+    background-color: var(--color-white);
+    color: var(--color-red);
 }
 
 ul#nav-menu i {
@@ -79,45 +93,6 @@ section {
     justify-content: space-evenly;
     align-items: center;
     margin: 0 200px;
-}
-
-div#text {
-    max-width: 500px;
-}
-
-div#text h2 {
-    color: var(--color-red);
-}
-
-div#text h1 {
-    margin: 10px 0px;
-    font-size: 4em;
-    font-weight: bold;
-}
-
-div#text p {
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-div#text button {
-    border: none;
-    padding: 1em 2em;
-    border-radius: 10px;
-    background-color: var(--color-red);
-    font-weight: bold;
-    opacity: .9;
-    cursor: pointer;
-}
-
-div#text button:hover {
-    opacity: 1;
-    padding: 1.1em 2.1em;
-    transition: .5s;
-}
-
-div#image {
-    text-align: center;
 }
 
 @media screen and (max-width:450px) {

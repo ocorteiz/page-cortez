@@ -13,16 +13,22 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    color: var(--color-dark);
     font-family: 'poppins';
+    background-color: #080808;
+    color: var(--color-white);
+}
+
+/* MENU */
+
+header {
+    padding: 0px 200px;
 }
 
 nav#navigate {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 3em;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.175);
+    padding: 20px 0px;
     transition: .5s;
 }
 
@@ -33,6 +39,7 @@ nav#navigate a#logo {
 
 a#logo span {
     color: var(--color-red);
+    text-shadow: 0 0 10px #F24236;
 }
 
 ul#nav-menu {
@@ -45,22 +52,25 @@ ul#nav-menu a, i {
     padding:  .5em .5em;
     cursor: pointer;
     font-weight: 500;
+    transition: .5s;
 }
 
 ul#nav-menu li a:hover, i:hover {
     color: var(--color-red);
-    transition: .5s;
+    cursor: pointer;
 }
 
 a#contact {
     background-color: var(--color-red);
     color: var(--color-white);
     border-radius: 30px;
+    box-shadow: 0 0 20px #F24236;
 }
 
 a#contact:hover {
-    background-color: var(--color-white);
+    background-color: transparent;
     color: var(--color-red);
+    box-shadow: none;
 }
 
 ul#nav-menu i {
@@ -87,13 +97,61 @@ div#menu span:nth-child(3) {
     background-color: var(--color-red);
 }
 
-section {
-    height: 80vh;
+/* SECTION PROFILE */
+
+.profile {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 200px;
+    padding: 100px 200px;
 }
+
+.profile div {
+    max-width: 600px;
+}
+
+.profile h1 {
+    font-size: 3em;
+}
+
+.profile p {
+    margin: 15px 0px;
+}
+
+.links {
+    margin: 30px 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.links a i {
+    margin: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 13px;
+}
+
+button.contact {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    box-shadow: 0 0 20px #F24236;
+}
+
+img {
+    box-shadow: 0 0 20px #F24236;
+    border-radius: 50%;
+    margin: 30px 0;
+    width: 500px;
+}
+
+.skils {
+    background-color: var(--color-dark);
+    color: red;
+}
+
 
 @media screen and (max-width:450px) {
 
@@ -101,7 +159,23 @@ section {
         flex-direction: column;
         text-align: center;
         height: 100%;
+    }
 
+    header {
+        padding: 0px 50px;
+    }
+    
+    .profile {
+        padding: 30px 50px;
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
     }
 
     div#text {
@@ -144,7 +218,7 @@ section {
         width: 100%;
         height: 100%;
         top: 70px;
-        background-color: var(--color-white);
+        
     }
 
     ul#nav-menu li {

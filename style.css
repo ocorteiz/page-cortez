@@ -3,7 +3,8 @@
 
 :root {
     --color-red: #F24236;
-    --color-blue: #2E5266;
+    --color-gray-ligth: #556370;
+    --color-gray: #39434d;
     --color-dark: #2e2e2e;
     --color-white: #ffffff;
 }
@@ -21,7 +22,7 @@
 /* MENU */
 
 header {
-    padding: 0px 200px;
+    padding: 0px 150px;
 }
 
 nav#navigate {
@@ -38,8 +39,8 @@ nav#navigate a#logo {
 }
 
 a#logo span {
-    color: var(--color-red);
-    text-shadow: 0 0 10px #F24236;
+    color: var(--color-gray);
+    text-shadow: 0px 0px 10px var(--color-gray-ligth);
 }
 
 ul#nav-menu {
@@ -47,29 +48,30 @@ ul#nav-menu {
     align-items: center;
 }
 
-ul#nav-menu a, i {
+ul#nav-menu a,
+i {
     margin: 0em 1em;
-    padding:  .5em .5em;
+    padding: .5em .5em;
     cursor: pointer;
     font-weight: 500;
     transition: .5s;
 }
 
-ul#nav-menu li a:hover, i:hover {
-    color: var(--color-red);
+ul#nav-menu li a:hover,
+i:hover {
+    color: var(--color-gray-ligth);
     cursor: pointer;
 }
 
 a#contact {
-    background-color: var(--color-red);
+    background-color: var(--color-gray);
     color: var(--color-white);
     border-radius: 30px;
-    box-shadow: 0 0 20px #F24236;
+    box-shadow: 0 0 20px var(--color-gray);
 }
 
 a#contact:hover {
     background-color: transparent;
-    color: var(--color-red);
     box-shadow: none;
 }
 
@@ -94,16 +96,16 @@ div#menu span {
 
 div#menu span:nth-child(1),
 div#menu span:nth-child(3) {
-    background-color: var(--color-red);
+    background-color: var(--color-gray);
 }
 
 /* SECTION PROFILE */
 
-.profile {
+section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 200px;
+    padding: 50px 150px;
 }
 
 .profile div {
@@ -131,25 +133,43 @@ div#menu span:nth-child(3) {
     padding: 10px 13px;
 }
 
-button.contact {
+.contact {
     border: none;
     padding: 10px;
     border-radius: 20px;
-    background-color: var(--color-red);
+    background-color: var(--color-gray);
     color: var(--color-white);
-    box-shadow: 0 0 20px #F24236;
+    box-shadow: 0 0 20px var(--color-gray);
 }
 
-img {
-    box-shadow: 0 0 20px #F24236;
+.img-profile {
+    box-shadow: 0 0 30px #39434d;
     border-radius: 50%;
     margin: 30px 0;
-    width: 500px;
+    max-width: 400px;
 }
 
-.skils {
-    background-color: var(--color-dark);
-    color: red;
+/* SECTION SKILS */
+
+.skil {
+    background-color: var(--color-gray);
+    box-shadow: 0 0  10px var(--color-gray);
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+.skil:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.skil img {
+    background-color: var(--color-gray);
+}
+
+.skil h1 {
+    background-color: var(--color-gray);
+    color: var(--color-white);
 }
 
 
@@ -164,7 +184,7 @@ img {
     header {
         padding: 0px 50px;
     }
-    
+
     .profile {
         padding: 30px 50px;
     }
@@ -182,14 +202,14 @@ img {
         margin: 20px 0;
     }
 
-    div#image img{
+    div#image img {
         width: 100vw;
     }
 
     div#text h1 {
         line-height: 1em;
     }
-    
+
     nav#navigate {
         padding: 18px 20px;
     }
@@ -218,7 +238,7 @@ img {
         width: 100%;
         height: 100%;
         top: 70px;
-        
+
     }
 
     ul#nav-menu li {
@@ -230,8 +250,8 @@ img {
     }
 
     ul#nav-menu.ativo {
-       right: 0;
-       transition: .5s;
+        right: 0;
+        transition: .5s;
     }
 
     button.ativo {
@@ -239,6 +259,3 @@ img {
         transition: .2s;
     }
 }
-
-
-

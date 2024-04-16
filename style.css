@@ -22,7 +22,7 @@
 /* MENU */
 
 header {
-    padding: 0px 200px;
+    padding: 0px 150px;
 }
 
 nav#navigate {
@@ -105,7 +105,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 200px;
+    padding: 50px 150px;
 }
 
 .profile div {
@@ -176,11 +176,14 @@ section {
 }
 
 .skil {
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    height: 200px;
+    padding: 20px;
     background-color: var(--color-gray);
     box-shadow: 0 0  10px var(--color-gray);
     border-radius: 0 10px 10px 10px;
+    text-align: center;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,7 +200,7 @@ section {
 
 .skil img {
     background-color: var(--color-gray);
-    max-width: 150px;
+    width: 130px;
 }
 
 .skil h2 {

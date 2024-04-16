@@ -22,7 +22,7 @@
 /* MENU */
 
 header {
-    padding: 0px 150px;
+    padding: 0px 200px;
 }
 
 nav#navigate {
@@ -105,7 +105,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 150px;
+    padding: 50px 200px;
 }
 
 .profile div {
@@ -128,9 +128,13 @@ section {
 
 .links a i {
     margin: 0;
-    border: 1px solid white;
+    border: 1px solid var(--color-white);
     border-radius: 50%;
     padding: 10px 13px;
+}
+
+.links a i {
+    border: 1px solid var(--color-gray-ligth);
 }
 
 .contact {
@@ -143,31 +147,60 @@ section {
 }
 
 .img-profile {
-    box-shadow: 0 0 30px #39434d;
+    box-shadow: 0 0 30px var(--color-gray);
     border-radius: 50%;
     margin: 30px 0;
     max-width: 400px;
+    transition: .3s;
+}
+
+.img-profile:hover {
+    box-shadow: 0 0 35px var(--color-gray-ligth);
+    cursor: pointer;
 }
 
 /* SECTION SKILS */
 
+.skils {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skils h1 {
+    font-size: 4em;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+}
+
 .skil {
+    width: 200px;
+    height: 250px;
     background-color: var(--color-gray);
     box-shadow: 0 0  10px var(--color-gray);
-    padding: 20px 25px;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: .3s;
 }
 
 .skil:hover {
+    box-shadow: 0 0  15px var(--color-gray-ligth);
     transform: scale(1.02);
     cursor: pointer;
 }
 
 .skil img {
     background-color: var(--color-gray);
+    max-width: 150px;
 }
 
-.skil h1 {
+.skil h2 {
     background-color: var(--color-gray);
     color: var(--color-white);
 }

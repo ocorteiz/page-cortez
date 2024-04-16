@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradiente de Fundo com Animação Contínua</title>
+<style>
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Tipo de fonte */
+    background: linear-gradient(to right, #556370, #2e2e2e); /* Cores do gradiente */
+    background-size: 200% 100%; /* Tamanho do gradiente */
+    -webkit-animation: moveGradient 10s linear infinite; /* Propriedades da animação para WebKit browsers */
+    animation: moveGradient 10s linear infinite; /* Propriedades da animação */
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 25%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 25%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-webkit-keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 25%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 25%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+</style>
+</head>
+<body>
+    <div>
+        <h1>Gradiente de Fundo com Animação Contínua</h1>
+        <p>Este é um exemplo de um gradiente de fundo com animação contínua.</p>
+    </div>
+</body>
+</html>

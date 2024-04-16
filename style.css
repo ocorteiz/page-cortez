@@ -7,6 +7,8 @@
     --color-gray: #39434d;
     --color-dark: #2e2e2e;
     --color-white: #ffffff;
+    --color-blue-shadow: #00094b;
+    --color-black: #000;
 }
 
 * {
@@ -15,8 +17,12 @@
     list-style: none;
     text-decoration: none;
     font-family: 'poppins';
-    background-color: black;
     color: var(--color-white);
+}
+
+body {
+    background: rgb(0, 9, 75);
+    background: linear-gradient(0deg, #000635 0%, #000000 80%);
 }
 
 /* MENU */
@@ -147,7 +153,7 @@ section {
 }
 
 .img-profile {
-    box-shadow: 0 0 30px var(--color-gray);
+    box-shadow: 0 0 30px #020623;
     border-radius: 50%;
     margin: 30px 0;
     max-width: 400px;
@@ -155,7 +161,8 @@ section {
 }
 
 .img-profile:hover {
-    box-shadow: 0 0 35px var(--color-gray-ligth);
+    box-shadow: 0 0 35px var(--color-blue-shadow);
+    transform: scale(1.01);
     cursor: pointer;
 }
 
@@ -167,20 +174,21 @@ section {
 }
 
 .skils h1 {
-    font-size: 4em;
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
     display: flex;
-    gap: 30px;
+    gap: 10px;
 }
 
 .skil {
-    width: 150px;
-    height: 200px;
+    width: 100px;
+    height: 150px;
     padding: 20px;
-    background-color: var(--color-gray);
-    box-shadow: 0 0  10px var(--color-gray);
+    background-color: #00021d;
+    box-shadow: 0 0 5px var(--color-blue-shadow);
     border-radius: 0 10px 10px 10px;
     text-align: center;
 
@@ -193,20 +201,34 @@ section {
 }
 
 .skil:hover {
-    box-shadow: 0 0  15px var(--color-gray-ligth);
+    box-shadow: 0 0 10px var(--color-blue-shadow);
     transform: scale(1.02);
     cursor: pointer;
 }
 
 .skil img {
-    background-color: var(--color-gray);
-    width: 130px;
+    background-color: #00021d;
+    width: 100px;
 }
 
 .skil h2 {
-    background-color: var(--color-gray);
+    font-size: 1em;
+    background-color: #00021d;
     color: var(--color-white);
 }
+
+/* SECTION PROJECTS */
+
+.projects {
+    flex-direction: column;
+    background-color:var(--color-black);
+}
+
+.projects h1 {
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 
 
 @media screen and (max-width:450px) {

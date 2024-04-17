@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-    --color-red: #F24236;
+    --color-red: #E1361D;
     --color-gray-ligth: #556370;
     --color-gray: #39434d;
     --color-dark: #2e2e2e;
     --color-white: #ffffff;
-    --color-blue-shadow: #00094b;
+    --color-blue-shadow: #000d72;
     --color-black: #000;
 }
 
@@ -21,14 +21,13 @@
 }
 
 body {
-    background: rgb(0, 9, 75);
-    background: linear-gradient(0deg, #000635 0%, #000000 80%);
+    background-color: var(--color-black);
 }
 
 /* MENU */
 
 header {
-    padding: 0px 150px;
+    padding: 0px 300px;
 }
 
 nav#navigate {
@@ -45,8 +44,8 @@ nav#navigate a#logo {
 }
 
 a#logo span {
-    color: var(--color-gray);
-    text-shadow: 0px 0px 10px var(--color-gray-ligth);
+    color: var(--color-red);
+    text-shadow: 0px 0px 10px var(--color-red);
 }
 
 ul#nav-menu {
@@ -65,15 +64,15 @@ i {
 
 ul#nav-menu li a:hover,
 i:hover {
-    color: var(--color-gray-ligth);
+    color: var(--color-red);
     cursor: pointer;
 }
 
 a#contact {
-    background-color: var(--color-gray);
+    background-color: var(--color-red);
     color: var(--color-white);
     border-radius: 30px;
-    box-shadow: 0 0 20px var(--color-gray);
+    box-shadow: 0 0 20px var(--color-red);
 }
 
 a#contact:hover {
@@ -111,7 +110,11 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 150px;
+    padding: 50px 300px;
+}
+
+.profile {
+    gap: 50px;
 }
 
 .profile div {
@@ -139,21 +142,30 @@ section {
     padding: 10px 13px;
 }
 
-.links a i {
-    border: 1px solid var(--color-gray-ligth);
+.links a i:hover {
+    border: 1px solid var(--color-red);
+    font-size: 1.1em;
 }
+
 
 .contact {
     border: none;
     padding: 10px;
     border-radius: 20px;
-    background-color: var(--color-gray);
+    background-color: var(--color-red);
     color: var(--color-white);
-    box-shadow: 0 0 20px var(--color-gray);
+    box-shadow: 0 0 20px var(--color-red);
+    transition: .3s;
+}
+
+.contact:hover {
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 .img-profile {
-    box-shadow: 0 0 30px #020623;
+    z-index: 1;
+    box-shadow: 0 0 20px #e1371d6f;
     border-radius: 50%;
     margin: 30px 0;
     max-width: 400px;
@@ -161,16 +173,18 @@ section {
 }
 
 .img-profile:hover {
-    box-shadow: 0 0 35px var(--color-blue-shadow);
+    box-shadow: 0 0 30px #e1371d6f;
     transform: scale(1.01);
     cursor: pointer;
 }
+
+
 
 /* SECTION SKILS */
 
 .skils {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .skils h1 {
@@ -180,15 +194,16 @@ section {
 
 .container {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .skil {
     width: 100px;
     height: 150px;
     padding: 20px;
-    background-color: #00021d;
-    box-shadow: 0 0 5px var(--color-blue-shadow);
+    background-color: var(--color-black);
+    box-shadow: 0px 0px 5px var(--color-red);
+    border: 1px solid var(--color-red);
     border-radius: 0 10px 10px 10px;
     text-align: center;
 
@@ -201,19 +216,18 @@ section {
 }
 
 .skil:hover {
-    box-shadow: 0 0 10px var(--color-blue-shadow);
-    transform: scale(1.02);
+    transform: translateY(-10px);
     cursor: pointer;
 }
 
 .skil img {
-    background-color: #00021d;
+    background-color: var(--color-black);
     width: 100px;
 }
 
 .skil h2 {
     font-size: 1em;
-    background-color: #00021d;
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 

@@ -354,13 +354,19 @@ section {
 }
 
 .metade input {
+    border-radius: 5px;
     width: 200px;
     height: 20px;
     padding: 10px;
     color: black;
-    outline: 1px solid var(--color-red);
+    outline: none;
+    border: 2px solid var(--color-red);
+    transition: .3s;
 }
 
+.metade input:focus {
+    transform: scale(1.02);
+}
 
 .left {
     display: flex;
@@ -369,11 +375,12 @@ section {
 }
 
 .rigth textarea {
+    border-radius: 5px;
     color: #000;
     height: 87%;
     width: 300px;
     padding: 10px;
-    outline: 1px solid var(--color-red);
+    outline: 2px solid var(--color-red);
 }
 
 .btn-submit {
